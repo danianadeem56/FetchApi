@@ -1,0 +1,174 @@
+ body {
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+  width: 700px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+}
+
+h1 {
+  color: black;
+}
+
+
+input[type="text"]
+{
+    width:500px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: black;
+}
+
+button[type="submit"]
+{
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+button[type="submit"]:hover {
+  background-color: white;
+  color: black;
+}
+
+ form {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+#userinfo {
+margin-top: 40px;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+  width: 90%;
+}
+
+
+#getPostsBtn {
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  padding: 10px ;
+  border-color: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#getPostsBtn:hover {
+  background-color: white;
+  color: black;
+}
+
+#result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  padding: 20px;
+  margin-top: 20px;
+  width: 600px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#posts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 20px;
+  margin-top: 20px;
+  width: 90%;
+  background-color:  #f9f9f9 ;
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+  .container, #result {
+    width: 80%;
+    padding: 15px;
+   
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+ 
+  #posts {
+    width: 100%;
+    padding: 15px;
+  }
+
+  #userinfo {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+/* Mobile devices (up to 500px) */
+@media (max-width: 500px) {
+  body {
+    padding: 10px;
+  }
+
+   form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .container, #result {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+  }
+
+  input[type="submit"] ,#getPostsBtn {
+    width: 98%;
+    padding: 10px;
+  }
+
+  
+
+  #posts {
+    gap: 25px;
+    padding: 10px;
+    font-size: 14px;
+    padding: 30px 20px;
+  }
+
+  .post {
+    width: 100%;
+  }
+}
+
